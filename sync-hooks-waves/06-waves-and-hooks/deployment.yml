@@ -4,6 +4,8 @@ kind: Deployment
 metadata:
   name: simple-deployment
   namespace: example06
+  annotations:
+    argocd.argoproj.io/PreSync: "10" 
 spec:
   replicas: 1
   selector:
